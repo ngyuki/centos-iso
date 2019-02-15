@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+
+  centos7-minimal:
+    build: ./centos7-minimal/
+    volumes:
+      - ./iso/:/iso/:rw
+
+  centos7-net:
+    build: ./centos7-net/
+    volumes:
+      - ./iso/:/iso/:rw
+
+  centos7-liveimg:
+    build: ./centos7-liveimg/
+    volumes:
+      - ./iso/:/iso/:rw
